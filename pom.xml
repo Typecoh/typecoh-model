@@ -38,6 +38,19 @@
         <url>https://github.com/Typecoh/typecoh-model</url>
     </scm>
 
+    <distributionManagement>
+        <repository>
+            <id>repo-cuztp</id>  <!-- 这个id必须和settings.xml中的server id一致 -->
+            <name>Aliyun Releases</name>
+            <url>https://packages.aliyun.com/69ad9014b569a4a95424c49c/maven/repo-cuztp</url>
+        </repository>
+        <snapshotRepository>
+            <id>repo-cuztp</id>  <!-- 可以使用同一个id，如果快照和release共用仓库 -->
+            <name>Aliyun Snapshots</name>
+            <url>https://packages.aliyun.com/69ad9014b569a4a95424c49c/maven/repo-cuztp</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <properties>
         <!-- 升级到JDK 17 -->
         <java.version>17</java.version>
